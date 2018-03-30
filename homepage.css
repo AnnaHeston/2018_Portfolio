@@ -1,0 +1,395 @@
+/* Hero Image */
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    padding-top: 55px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+
+.home {
+    background: url(./images/plantPic.jpg) no-repeat;
+    background-size: 100%;
+    height: 680px;
+    padding-top: 220px;
+
+}
+
+.halfRow {
+    height: 50%;
+    padding: 10px 0;
+}
+
+.leftQuarter {
+    height: 100%;
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 0 10px 0 0;
+}
+
+.rightQuarter {
+    height: 100%;
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 0 0 0 10px;
+}
+
+.work {
+    height: 700px;
+    background: #666;
+    padding: 50px 60px;
+}
+
+.workOverlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.workOverlay:hover {
+    opacity: 1;
+}
+
+
+
+.workContainer:hover .workOverlay {
+    opacity: 1;
+}
+
+.overlayText {
+    color: #000;
+    font-size: 15px;
+    padding: 10px;
+    background: #fff;
+    font-weight: bold;
+}
+
+
+.workBlockLeft {
+    height: 100%;
+    transform: skewX(-10deg);
+    padding: 20px 10px 20px 20px;
+}
+
+.workBlockRight {
+    height: 100%;
+    transform: skewX(-10deg);
+    padding: 20px 20px 20px 10px;
+}
+
+.workContainer {
+    padding: 10px;
+    position: relative;
+}
+
+.home_intro {
+    font-size: 50px;
+    color: #000;
+    text-align: right;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+
+.work1 {
+    background: url(./images/WealthMetaThumb.jpg) no-repeat;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.work2 {
+    background: url(./images/TVThumb.jpg) no-repeat;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center;
+
+}
+
+.work3 {
+    background: url(./images/ChaliceThumb.jpg) no-repeat;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    float: left;
+}
+
+.work4 {
+    background: url(./images/JTWThumb.jpg) no-repeat;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    float: left;
+}
+
+.work5 {
+    background: url(./images/CapbuilderThumb.jpg) no-repeat;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center;
+
+}
+
+.work6 {
+    background: url(./images/HestonHomeDesignThumb.jpg) no-repeat;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center;
+
+}
+
+.about {
+    height: 500px;
+    background: #f4f4f4;
+}
+
+.aboutSection {
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 45px;
+    color: #000;
+}
+
+.titleContainer {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.siteLink {
+    font-size: 30px;
+    color: #fff;
+}
+
+.workTitle {
+    background: #000;
+    text-align: center;
+}
+
+.modal-content {
+    background: #e5f2e5 !important;
+}
+
+.modalButton {
+    background: #ccc;
+    color: #000;
+}
+
+.modalButton:hover {
+    color: #777;
+}
+
+.modalButtonContainer {
+    text-align: right;
+}
+
+.modalTitle {
+    font-size: 25px;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.aboutTitle {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.aboutImage {
+    width: auto;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    width: auto;
+    height: 380px;
+    text-align: center;
+
+}
+
+.navbar {
+    background: #666;
+    border: none;
+}
+
+.navUl {
+    text-decoration: none;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.navUl li {
+    display: inline-block;
+    color: #ccc;
+    font-size: 20px;
+    padding: 6px 15px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navUl li a{
+    color: #ccc !important;
+    text-decoration: none;
+}
+
+.navUl li a:hover{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.contact {
+    background: url(./images/contactPic.jpg) no-repeat;
+    padding: 30px;
+    background-size: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.contactForm {
+    display: none;
+}
+
+.contactInfo {
+    display: none;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.divider {
+    text-align: center;
+    height: 55px;
+    padding: 13px 0;
+    color: #333;
+    font-size: 20px;
+    background: #fb998e;
+}
+
+.divider2 {
+    text-align: center;
+    height: 10px;
+    background: #fb998e;
+}
+
+.contactInfo {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about {
+        height: 400px;
+    }
+
+    .aboutImage, .imageContainer {
+        height: 250px;
+    }
+
+    .divider {
+        font-size: 15px;
+    }
+    .home {
+        height: 510px
+    }
+
+    .overlayText {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+
+    .about {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .aboutImage, .imageContainer {
+        height: 250px;
+    }
+
+    .home {
+        height: 210px;
+        padding-top: 50px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .home_intro {
+        font-size: 25px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .workBlockLeft, .workBlockRight {
+        transform: none;
+        height: 50%;
+        padding: 10px;
+    }
+
+    .halfRow {
+        height: 50%;
+    }
+
+    .work {
+        padding: 10px;
+    }
+
+    .overlayText {
+        font-size: 12px;
+        padding: 2px;
+
+    }
+
+    .workOverlay {
+        width: 100px;
+    }
+
+    .mailForm {
+        display: none;
+    }
+
+    .contactInfo {
+        background: #000;
+        height: 50px;
+        margin: 20px;
+        padding-top: 3px;
+        color: #fff;
+    }
+
+    .aboutTitle {
+        font-size: 20px;
+    }
+
+}
+
+

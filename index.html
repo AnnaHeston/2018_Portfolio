@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anna Heston Portfolio Site</title>
+    <link href="./vendor/simpletextrotator.css" rel="stylesheet">
+    <link href="./vendor/bootstrap.css" rel="stylesheet">
+    <link href="./vendor/bootstrap-theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="homepage.css" rel="stylesheet">
+    <script src="./vendor/jquery-3.3.1.min.js"></script>
+    <script src="./vendor/bootstrap.js"></script>
+    <script src="./vendor/jquery.simple-text-rotator.js"></script>
+    <script src="./vendor/jquery.tagcanvas.min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+
+
+
+</head>
+
+<html>
+
+
+<body class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-default navbar-fixed-top clearfix">
+                <div class="navdiv">
+                    <ul class="navUl">
+                        <li><a class="clickable" href="#home">home</a></li>
+                        <li><a class="clickable" href="#work">work</a></li>
+                        <li><a class="clickable" href="#about">about</a></li>
+                        <li><a class="clickable" href="#contact">contact</a></li>
+                        <li><a class="clickable" href="./images/resume.pdf">resume</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <div class="home row" id="home">
+            <div class="intro-container">
+                <h1 class="home_intro">
+                    Hi, I'm Anna.
+                    <br>
+                    I love working with
+                    <span class="rotate"> JavaScript, Angular, Django, CSS, HTML, Bootstrap, TypeScript, Laravel</span>.
+                </h1>
+            </div>
+
+        </div>
+
+        <div class="divider row">A good programmer is someone who always looks both ways before crossing a one-way street. (Doug Linder)</div>
+
+        <div class="work row" id="work">
+            <div class="col-xs-12 col-sm-6 workBlockLeft">
+                <div class="halfRow">
+                    <div class="leftQuarter">
+                        <div class="clickable work1 workContainer" data-toggle="modal" data-target="#work1Modal">
+                            <div class="workOverlay">
+                                <div class="overlayText">WealthMeta.com</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="rightQuarter">
+                        <div class="clickable workContainer work2" data-toggle="modal" data-target="#work2Modal">
+                            <div class="workOverlay">
+                                <div class="overlayText">TualatinValley.org</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="halfRow">
+                    <div class="clickable workContainer work3" data-toggle="modal" data-target="#work3Modal">
+                        <div class="workOverlay">
+                            <div class="overlayText">ChaliceWealthPartners.com</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-6 workBlockRight">
+                <div class="halfRow">
+                    <div class="clickable workContainer work4" data-toggle="modal" data-target="#work4Modal">
+                        <div class="workOverlay">
+                            <div class="overlayText">JTWLLC.com</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="halfRow">
+                    <div class="leftQuarter">
+                        <div class="clickable workContainer work5" data-toggle="modal" data-target="#work5Modal">
+                            <div class="workOverlay">
+                                <div class="overlayText">CapBuilder.net</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rightQuarter">
+                        <div class="clickable workContainer work6" data-toggle="modal" data-target="#work6Modal">
+                            <div class="workOverlay">
+                                <div class="overlayText">HestonHomeDesigns.com</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about row" id="about">
+            <div class="col-xs-12 aboutTitle"><span>When I'm not at my computer I:</span></div>
+            <div class="col-xs-12 col-sm-4 aboutSection">
+                <div class="imageContainer">
+                    <img class="aboutImage" src="./images/profilePicutre.jpg" alt="Profile Picture"/>
+                </div>
+            </div>
+            <div id="aboutCloud" class="col-xs-12 col-sm-4 aboutSection">
+                <canvas id="aboutCanvas">
+                    <ul>
+                        <li><a href="#">Raise my two kids</a></li>
+                        <li><a href="#">Walk the dog</a></li>
+                        <li><a href="#">Have dinner with friends</a></li>
+                        <li><a href="#">Find new things to cook</a></li>
+                        <li><a href="#">Work in my garden</a></li>
+                        <li><a href="#">Relax in the park</a></li>
+                        <li><a href="#">Attempt home improvements</a></li>
+                        <li><a href="#">Prank my husband</a></li>
+                        <li><a href="#">Dream of traveling</a></li>
+                    </ul>
+                </canvas>
+            </div>
+            <div class="col-xs-12 col-sm-4 aboutSection">
+                <div class="imageContainer">
+                    <img class="aboutImage" src="./images/bowie.jpg" alt="My Dog"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider2 row"></div>
+
+        <div class="contact row" id="contact">
+            <div>
+                <a href="#footer" class="btn btn-default contactMe">Contact Me</a>
+            </div>
+            <div class="contactForm">
+                <a class="mailForm" id="foxyform_embed_link_924105" href="http://www.foxyform.com/">foxyform</a>
+            </div>
+            <div class="contactInfo">
+                <div>p. (503)-914-8121</div>
+                <div>e. amheston@gmail.com</div>
+            </div>
+
+            <div class="copyright">&copy; 2018 Anna Heston</div>
+
+        </div>
+
+        <div class="footer row" id="footer"></div>
+
+
+    <!-- Work1 Modal -->
+    <div class="modal fade" id="work1Modal" tabindex="-1" role="dialog" aria-labelledby="work1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modalTitle">WealthMeta.com</div>
+                    <div class="description">Since January of 2017:
+                        <ul>
+                            <li>Angular2 and TypeScript to wire up front end on all calculators and wealth management tools</li>
+                            <li>Illustrate data using Chart.js</li>
+                            <li>Front end implementation of wireframes and designs with HTML, CSS, and Bootstrap</li>
+                            <li>Assist with Django for content management</li>
+                            <li>Provide unit tests using Karma for all wealth calculator functions</li>
+                            <li>Add various plugins to project as needed to enhance the UI (example: sleeker scrollbar)</li>
+                            <li>Make site fully responsive across all browsers</li>
+                            <li>Help refine design, layout, and function of wealth management tools</li>
+                        </ul>
+                    </div>
+                    <div class="modalButtonContainer">
+                        <button type="button" class="btn btn-secondary modalButton" data-dismiss="modal">Close</button>
+                        <a href="https://wealthmeta.com" type="button" class="btn btn-secondary modalButton">Visit Site</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="work2Modal" tabindex="-1" role="dialog" aria-labelledby="work2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modalTitle">TualatinValley.org</div>
+                    <div class="description">
+                        <p>Used jQuery, HTML, and CSS to add responsive homepage carousel to existing website with specific client requests for slide transition, navigation, and lightbox behaviors</p>
+                    </div>
+                    <div class="modalButtonContainer">
+                        <button type="button" class="btn btn-secondary modalButton" data-dismiss="modal">Close</button>
+                        <a href="https://tualatinvalley.org" type="button" class="btn btn-secondary modalButton">Visit Site</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="work3Modal" tabindex="-1" role="dialog" aria-labelledby="work3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modalTitle">ChaliceWealthPartners.com</div>
+                    <div class="description">
+                        <ul>
+                            <li>Given Photoshop design files for desktop views, used HTML, SCSS, Bootstrap, and jQuery to create a pixel perfect UI</li>
+                            <li>Expanded design themes for mobile views when provided with wireframes only to make a fully responsive site across browsers</li>
+                            <li>Wired front end to content management system with Django</li>
+                            <li>Worked with project manager, design team, and back end engineers to present to client prior to deadline and under budget</li>
+                        </ul>
+                    </div>
+                    <div class="modalButtonContainer">
+                        <button type="button" class="btn btn-secondary modalButton" data-dismiss="modal">Close</button>
+                        <a href="https://chalicewealthpartners.com" type="button" class="btn btn-secondary modalButton">Visit Site</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="work4Modal" tabindex="-1" role="dialog" aria-labelledby="work4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modalTitle">JTWLLC.com</div>
+                    <div class="description">
+                        <p>Rebranded existing WordPress site with complicated theme and provided solutions to UI and responsive behavior issues</p>
+                    </div>
+                    <div class="modalButtonContainer">
+                        <button type="button" class="btn btn-secondary modalButton" data-dismiss="modal">Close</button>
+                        <a href="https://jtwllc.com" type="button" class="btn btn-secondary modalButton">Visit Site</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="work5Modal" tabindex="-1" role="dialog" aria-labelledby="work5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modalTitle">CapBuilder.net</div>
+                    <div class="description">
+                        <ul>
+                            <li>Use Backpack for Laravel and MySQL to update the database and the content administration processes for a large retail site</li>
+                            <li>Make front end updates using PHP, CSS, and HTML</li>
+                            <li>Work with designer to convert old sprite files to admin-able SVG files for better user experience</li>
+                            <li>Work to exceed client expectations and improve site performance within the proposed timeline</li>
+                        </ul>
+                    </div>
+                    <div class="modalButtonContainer">
+                        <button type="button" class="btn btn-secondary modalButton" data-dismiss="modal">Close</button>
+                        <a href="https://capbuilder.net" type="button" class="btn btn-secondary modalButton">Visit Site</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="work6Modal" tabindex="-1" role="dialog" aria-labelledby="work6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modalTitle">HestonHomeDesign.com</div>
+                    <div class="description">
+                       <p>Example WordPress site made with Tesseract theme</p>
+                    </div>
+                    <div class="modalButtonContainer">
+                        <button type="button" class="btn btn-secondary modalButton" data-dismiss="modal">Close</button>
+                        <a href="http://hestonhomedesign.com" type="button" class="btn btn-secondary modalButton">Visit Site</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
